@@ -5,8 +5,7 @@ $bodyMail = $_POST['bodyMail'];
 $mail = $_POST['email'];
 
 if(!empty($name) || !empty($bodyMail) || !empty($mail)) {
-   /* $to      = 'calcomp.furb@gmail.com'; */
-    $to      = 'bcrussi@gmail.com';
+    $to      = 'calcomp.furb@gmail.com';
     $subject = 'Contato Via Site - '.$name;
     $message = 'Enviado por: '. $name."\r\n\r\n". $bodyMail;
     $headers = 'From: '. $mail . "\r\n" .
